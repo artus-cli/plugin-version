@@ -1,0 +1,63 @@
+{
+  "name": "@artus-cli/template",
+  "version": "0.0.0",
+  "description": "artus-cli template",
+  "homepage": "",
+  "author": "",
+  "main": "dist/index.js",
+  "bin": "dist/cli.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "postlint": "tsc --noEmit",
+    "test": "mocha",
+    "cov": "c8 -n src/ npm test",
+    "ci": "npm run cov",
+    "tsc": "rm -rf dist && tsc",
+    "prepack": "npm run tsc"
+  },
+  "dependencies": {
+    "@artus-cli/artus-cli": "beta"
+  },
+  "devDependencies": {
+    "@artus/eslint-config-artus": "^0.0.1",
+    "@artus/tsconfig": "^1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.14",
+    "c8": "^7.12.0",
+    "coffee": "^5.5.0",
+    "eslint": "^8.28.0",
+    "mocha": "^10.0.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "artus",
+    "artus-cli",
+    "command-line-app",
+    "cli",
+    "commander"
+  ],
+  "license": "MIT"
+}
