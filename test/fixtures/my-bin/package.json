@@ -1,0 +1,6 @@
+{
+  "name": "my-bin",
+  "version": "1.0.1",
+  "type": "commonjs",
+  "bin": "./bin/cli.js"
+}

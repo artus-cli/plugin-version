@@ -25,7 +25,7 @@
     "prepack": "npm run tsc"
   },
   "dependencies": {
-    "@artus-cli/artus-cli": "beta"
+    "@artus-cli/artus-cli": "latest"
   },
   "devDependencies": {
     "@artus/eslint-config-artus": "^0.0.1",
