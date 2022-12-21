@@ -20,7 +20,7 @@ export default class VersionLifecycle implements ApplicationLifecycle {
     this.program.useInCommand(rootCommand, async (ctx: CommandContext, next) => {
       const { args } = ctx;
       if (args.version) {
-        return console.info(this.program.binName, this.program.version || '1.0.0');
+        return console.info(this.program.version);
       }
 
       await next();
