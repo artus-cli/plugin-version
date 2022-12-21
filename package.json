@@ -1,7 +1,7 @@
 {
-  "name": "@artus-cli/template",
-  "version": "0.0.0",
-  "description": "artus-cli template",
+  "name": "@artus-cli/plugin-version",
+  "version": "0.0.1",
+  "description": "version plugin for artus cli",
   "homepage": "",
   "author": "",
   "main": "dist/index.js",
