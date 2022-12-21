@@ -1,7 +1,7 @@
 {
-  "name": "@artus-cli/template",
-  "version": "0.0.0",
-  "description": "artus-cli template",
+  "name": "@artus-cli/plugin-version",
+  "version": "0.0.1-beta.1",
+  "description": "version plugin for artus cli",
   "homepage": "",
   "author": "",
   "main": "dist/index.js",
@@ -25,7 +25,7 @@
     "prepack": "npm run tsc"
   },
   "dependencies": {
-    "@artus-cli/artus-cli": "beta"
+    "tslib": "^2.4.0"
   },
   "devDependencies": {
     "@artus/eslint-config-artus": "^0.0.1",
@@ -38,13 +38,13 @@
     "mocha": "^10.0.0",
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.1",
+    "@artus-cli/artus-cli": "latest",
     "tsconfig-paths": "^4.1.1",
-    "tslib": "^2.4.0",
     "typescript": "^4.8.2"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:artus-cli/plugin-version.git"
   },
   "files": [
     "dist"
@@ -55,6 +55,7 @@
   "keywords": [
     "artus",
     "artus-cli",
+    "artus-cli-plugin",
     "command-line-app",
     "cli",
     "commander"
