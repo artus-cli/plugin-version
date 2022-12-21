@@ -17,7 +17,7 @@ $ npm i @artus-cli/plugin-version
 
 ## Usage
 
-```typescript
+```ts
 // plugin.ts
 
 export default {
