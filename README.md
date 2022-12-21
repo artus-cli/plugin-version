@@ -33,6 +33,4 @@ export default {
 ```sh
 $ npm test
 $ npm run cov
-
-$ npx ts-node src/bin/cli.ts dev --port=8080
 ```
