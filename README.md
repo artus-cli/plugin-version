@@ -1,4 +1,4 @@
-# artus-cli/plugin-version
+# @artus-cli/plugin-version
 
 Built-in plugin for showing version info in artus-cli
 
