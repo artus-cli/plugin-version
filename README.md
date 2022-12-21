@@ -1,6 +1,6 @@
 # artus-cli/plugin-version
 
-version plugin for artus cli
+Built-in plugin for showing version info in artus-cli
 
 [![NPM version](https://img.shields.io/npm/v/@artus-cli/plugin-version.svg?style=flat-square)](https://npmjs.org/package/@artus-cli/plugin-version)
 [![NPM quality](https://img.shields.io/npms-io/final-score/@artus-cli/plugin-version.svg?style=flat-square)](https://npmjs.org/package/@artus-cli/plugin-version)
