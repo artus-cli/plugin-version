@@ -1,4 +1,4 @@
-import { Program, CommandContext, Inject, ApplicationLifecycle, LifecycleHook, LifecycleHookUnit } from '@artus-cli/artus-cli';
+import { Program, Inject, ApplicationLifecycle, LifecycleHook, LifecycleHookUnit } from '@artus-cli/artus-cli';
 
 @LifecycleHookUnit()
 export default class VersionLifecycle implements ApplicationLifecycle {
@@ -17,12 +17,11 @@ export default class VersionLifecycle implements ApplicationLifecycle {
     }, [ rootCommand ]);
 
     // intercept root command and show version
-    this.program.useInCommand(rootCommand, async (ctx: CommandContext, next) => {
-      const { args } = ctx;
-      if (args.version) {
+    this.program.use(async (ctx, next) => {
+      const { args, fuzzyMatched } = ctx;
+      if (fuzzyMatched === rootCommand && args.version) {
         return console.info(this.program.version);
       }
-
       await next();
     });
   }
