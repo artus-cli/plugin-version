@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/artus-cli/plugin-version/compare/v1.0.1...v1.0.2) (2023-03-09)
+
+
+### Bug Fixes
+
+* required args ([#3](https://github.com/artus-cli/plugin-version/issues/3)) ([651af20](https://github.com/artus-cli/plugin-version/commit/651af202c3a353cfacd4160f15ff890420d90f33))
+
+
+
 ## [1.0.1](https://github.com/artus-cli/plugin-version/compare/v1.0.0...v1.0.1) (2023-02-06)
 
 
