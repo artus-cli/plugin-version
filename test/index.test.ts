@@ -21,4 +21,11 @@ describe('test/index.test.ts', () => {
       .expect('stdout', /dev/)
       .end();
   });
+
+  it('should show version with required option without error', async () => {
+    await run('other-bin', '-v')
+      // .debug()
+      .expect('stdout', /1.0.2/)
+      .end();
+  });
 });
